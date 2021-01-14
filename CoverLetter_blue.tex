@@ -1,0 +1,143 @@
+%%
+% UC Berkeley Modern Formal Color Letterhead
+% LaTeX Template
+% April 2020
+%
+% Adapted from Microsoft Word template
+% https://brand.berkeley.edu/stationery/ 
+% by Chris Hoofnagle https://hoofnagle.berkeley.edu 
+%
+% License: faculty and staff of the University of California are free to use this template
+%%
+%% Lualatex 
+%\documentclass[12pt,letterpaper]{letter} %this controls the paper style and font size
+\documentclass[12pt,a4paper]{scrlttr2} %scrlttr2%this controls the paper style and font size
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\newcommand{\changefont}{%
+    \fontsize{9}{11}\selectfont
+}
+
+\usepackage{calligra}
+ \usepackage{xcolor}
+\definecolor{zzured}{rgb}{0.45, 0.0, 0.0} 
+\definecolor{zzublue}{rgb}{0.07058, 0.2745, 0.2117} 
+
+ 
+
+
+\usepackage[left =20mm, right =20mm ,top=35mm, bottom=35mm ]{geometry}
+
+\usepackage{parskip} % for spacing
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.5em}
+\renewcommand{\baselinestretch}{1.2}
+
+\usepackage{graphicx} % necessary for logos
+\usepackage{lipsum} %you can delete this
+
+\usepackage{fancyhdr} % for fancy headers
+\usepackage{lastpage} 
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{  \fontfamily{phv}\fontseries{b}\fontsize{9}{11}\selectfont
+\begin{center}			
+			\begin{picture}(1000,1)
+			\put(0,-13){\includegraphics[width=0.13\textwidth]{zzu_blue_3.pdf}} %{}}
+			\put(80,33){\textbf{\large  \Who }}
+			\put(80,20){\footnotesize \Title }
+			\put(80,10){\footnotesize \Where }
+			\put(80,0){\footnotesize \Institution}						
+			\put(250,33){\footnotesize \CityZip }
+			\put(250,22){\footnotesize \TEL }			
+			\put(250, 11){\footnotesize \Email}
+			\put(250,1){\footnotesize \Homepage }
+			\put(382,-5){\includegraphics[width=0.25\textwidth]{zzu_blue_4.pdf}} %{zzu_blue_4.pdf}}
+			\put(0,-20){{\color{zzublue}\rule{\textwidth}{1.8pt}}}
+			\end{picture}
+		\end{center}	  
+} % footer for pages 2 on
+%\lfoot{\footnotesize {\textit{Letter from \Who{} regarding ...}}} % Left footer
+\cfoot{ {\color{zzublue}\rule{\textwidth}{1.8pt}} No.100 Science Avenue, Zhengzhou City, Henan Province P.R.China \\ \Fax } % Change for center footer
+%\rfoot{\footnotesize Page \thepage\ of \pageref{LastPage}} % Right footer page #s 
+%\renewcommand{\footrulewidth}{0pt}
+
+ 
+%Sender Information -- Edit this to fill in the header
+\def\Who{Yanjie Zhou} % Fill in your name here
+\def\Title{Assistant Professor} % Your title
+\def\Where{School of Management Engineering} % Your department 
+\def\Institution{Zhengzhou University} % Your  institution
+\def\Address{Address:} % Your address
+\def\CityZip{Zhengzhou, 450001, China} % Your city, zip code, country, etc
+\def\Email{E-mail: ieyjzhou@zzu.edu.cn} % Your email address
+\def\TEL{Tel: (+86) 0371--67781582} % Your phone number
+\def\Fax{Fax: (+86) 0371--67781582} % Your phone number
+\def\Homepage{https://ieyjzhou.github.io} % Your URL
+\def\Lab{https://ieyjzhou.github.io} % Your URL
+
+
+\def\JournalName{\textbf{Journal Name}}
+
+%first page margins are different to accommodate the letterhead
+
+%\topmargin=-1.1in % Moves the top margin; here it is a negative value to move the text up
+%\textheight=9.5in % Total text height for this page
+%\oddsidemargin=-10pt % Left margin; widened here with a negative value
+\textwidth=7in % Text width
+%\let\raggedleft\raggedright % Makes the date appear on the left
+ % Makes the date appear on the left
+%\let\raggedleft\raggedleft 
+\begin{document}	
+	\begin{letter}{}  
+		\date{}
+ 
+\vspace{15mm}   
+ %\opening{Dear Editor-in-Chief,}
+ \begin{flushleft}
+ Dear Editor-in-Chief,
+ \end{flushleft}
+ 
+ I hope this letter finds you well.		 
+
+		I wish to submit a new manuscript entitled \textbf{"Paper title" } for publication at the special issue, \textbf{*****}, of \JournalName.	 
+
+		I confirm that this work is original and has not been published elsewhere nor is it currently under consideration for publication elsewhere. All authors have approved the manuscript and agree with its submission to \JournalName. 		 
+
+		contribution 		contribution contribution contribution contribution contribution contribution contribution contribution contribution
+		contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution
+		contribution contribution contribution contribution contribution contribution
+		contribution contribution contribution
+				contribution 		contribution contribution contribution contribution contribution contribution contribution contribution contribution
+		contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution contribution	
+		
+		Because our findings could be applied in the **** right away, they are likely to be of great interest to the vision scientists, researchers, ***** who read your journal.	
+			
+		Thank you for receiving our manuscript and considering it for review. We appreciate your time and look forward to your response. Please let me know of your decision at your earliest convenience.
+
+\begin{flushleft}
+			With my best regards,	
+ \end{flushleft}
+ 
+		\closing{Sincerely yours,}
+
+\begin{flushleft}
+{
+\sffamily \calligra
+\fontfamily{qzc}
+\fontsize{25}{10}
+\selectfont Yanjie Zhou\\[3mm]
+}			
+\end{flushleft}
+
+%\begin{flushleft}
+%			\includegraphics[width=0.3\textwidth]{signature.png}
+ %\end{flushleft}
+     
+	\noindent	\Where ,\\
+		\Institution \\
+\today  
+%\vspace{15mm}
+	\end{letter}
+ 	
+\end{document}
